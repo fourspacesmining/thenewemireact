@@ -1,0 +1,92 @@
+.contenidoheader {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .textoheader {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px #00000080;
+    font-size: 4vw;
+  }
+
+.checkout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0px; 
+}
+    
+.section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    max-width: 50vw;
+}
+
+.section td {
+    padding:3px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #bbb;
+}
+
+.section td img {
+    max-width: 60px;
+    max-height: auto;
+    margin-left: 0px;
+    border-radius: 0px;
+}
+
+.section .input-group{
+    display: flex;
+    justify-content: center;
+}
+  
+.section .input-group button{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #ededed;
+    border:none;
+    color: #000000;
+}
+
+.section .input-group .item-count{
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    background-color: #ededed;
+    max-width: 50px;
+    border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.section .delete-item {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    background-color: #ffaeae;
+    max-width: 50px;
+    border: none;
+  }
+
+.section #counter-value{
+    height: 50px;
+    min-width: 60px;
+    background-color: #eaeaea;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

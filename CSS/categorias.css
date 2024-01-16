@@ -1,0 +1,158 @@
+.listado {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 30fr); 
+  gap: 0px; 
+}
+
+h2 {
+  float: right;
+  font-size: 13px;
+}
+
+.listado .grid-item {
+  margin-top: 35px;
+  transition: all 0.2s ease-in-out; 
+  text-align: center;
+}
+
+.botones a, .botones button {
+  border: none;
+  text-decoration: none;
+  color: #1b1b1b;
+  margin-left: 1.8px;
+  margin-right: 1.5px;
+  margin-bottom: 3px;
+}
+
+/*cambiar al boton de cotizar*/
+.botones .algo {
+  background-color: #9cd2ff;
+}
+
+.botones .share-button {
+  background-color: #98a1ff;
+}
+
+.botones .modalBtn {
+  background-color: #c39dff;
+}
+
+.botones .algo:hover {
+  background-color: #50b0ff;
+}
+
+.botones .share-button:hover {
+  background-color: #3f4ff9;
+}
+
+.botones .modalBtn:hover {
+  background-color: #853afd;
+}
+
+.botones i {
+  font-size: small;
+}
+
+.listado .grid-item .botones {
+  display:none
+}
+
+.listado a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+.listado a:hover{
+  text-decoration: underline;
+}
+
+.listado .grid-item:hover .botones {
+  display: block;
+}
+
+.listado .grid-item:hover {
+  border: 2px solid #555;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.listado h4 {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.listado h5 {
+  margin-top: -6px;
+  font-weight: lighter;
+  font-size: medium;
+}
+
+.grid-item img {
+  max-height: 200px;
+  border-radius: 30px;
+  margin-top: 3px;
+}
+
+.grid-item .botones input {
+  display: none;
+}
+
+/* -----------------------------codigo para hacer la pagina responsiva de escritorio---------------------------- */
+@media screen and (min-width: 1051px) {
+
+  .listado {
+    grid-template-columns: repeat(4, 30fr); 
+  }
+
+  .listado .grid-item:hover {
+    margin-left: 10px; /* Add negative margins on hover */
+    margin-right: 10px;
+    margin-bottom: 90px;
+    transform: scale(1.4);
+    min-width: 19vw;
+  }
+
+  .botones a, .botones button {
+    padding:10px;
+    font-size: 10px;
+    transition: 0.2s; 
+    border-radius: 0px;
+    min-width: 6vw;
+  }
+
+  .botones a:hover, button:hover {
+    cursor: pointer;
+  }
+
+  .botones .textoBtn {
+    display: inline-block;
+  }
+
+  .botones i {
+    padding-left: 3px;
+  }
+
+}
+
+/* -----------------------------codigo para hacer la pagina responsiva de movil---------------------------- */
+@media screen and (max-width: 1050px) {
+
+  .listado {
+    grid-template-columns: repeat(2, 60fr); 
+  }
+
+  .listado .grid-item {
+    margin-left: 10px; /* Add negative margins on hover */
+    margin-right: 10px;
+  }
+
+  .botones a, .botones button {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .botones .textoBtn {
+    display: none;
+  }
+}

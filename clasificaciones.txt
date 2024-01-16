@@ -1,0 +1,25 @@
+Llaves dobles
+Llaves sencillas
+Llaves Combinadas
+Torretas y valvulas
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+
+  }
+}
+
+
+Cosas que necesito para la página: 
+
+1. Logo
+2. Eslogan
+3. Renders de 
+	a. 3 llaves nacionales aplicadas
+	b. 3 llaves importadas aplicadas
+	c. 3 regaderas nacionales aplicadas
+	d. 3 regaderas importadas aplicadas
+	e. Muchas llaves o lo que quieran que sea el header
+4. Lo que vayamos a idear de autoridad para el landing page !!!no urge pero es mas importante!!!
+5. El video explicando los puntos de la landing page
+6. Los catálogos actualizados

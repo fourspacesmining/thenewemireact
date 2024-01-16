@@ -1,0 +1,168 @@
+main {
+  text-align: center;
+  color: #333333;
+}
+
+.header1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  color: #ffffff;
+  background-color: #c9c9c9;
+  padding: 3vw;
+}
+
+h4 {
+  max-width: 250px;
+}
+
+.contenidoheader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textoheader1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px #00000080;
+}
+
+.textoheader2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px #00000080;
+}
+
+.contenidoheader .botonesHdr {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional vertical centering */
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.botonCtzr a {
+  background-color: #bbffbf;
+  padding: 1vw;
+  border: none;
+  border-radius: 1.5vw;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #1b1b1b;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px #00000080;
+  font-weight: bold;
+}
+
+.contenidoheader a {
+  padding: 1.5vw;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 1.5vw;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 0.2s; 
+  color: #1b1b1b;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  box-shadow: 2px 2px 6px #00000080;
+}
+
+.contenidoheader .botonCtzr a {
+  background-color: #bbffbf;;
+}
+
+.guia {
+  color: #ffffff;
+  background-color: #c9c9c9;
+  padding: 1vw;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.grid-item img {
+  width: 100%; 
+  object-fit: contain; 
+}
+
+/* -----------------------------codigo para hacer la pagina responsiva de escritorio---------------------------- */
+@media screen and (min-width: 1051px) {
+
+  .textoheader1 {
+    font-size: 4vw;
+  }
+
+  .textoheader2 {
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 li{
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    padding: 3vw;
+  }
+
+  .grid-item img {
+    max-height: 100px; 
+  }
+
+  .botonCtzr a:hover {
+    background-color: rgb(24, 199, 1);
+  }
+
+}
+
+/* -----------------------------codigo para hacer la pagina responsiva de celular---------------------------- */
+@media screen and (max-width: 1050px) {
+
+  .textoheader1 {
+    font-size: 4vw;
+  }
+
+  .textoheader2, h2 li, h3 {
+    font-size: 2.5vw;
+  }
+
+ .contenidoheader a {
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  h2 li{
+    padding-top: 3vw;
+  }
+
+  h3 {
+    padding: 3vw;
+  }
+
+  h4 {
+    font-size: 13px;
+  }
+
+  h5 {
+    font-size: 10px;
+
+  }
+
+  .grid-item img {
+    max-height: 15vw; 
+  }
+}
